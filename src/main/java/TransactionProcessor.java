@@ -1,17 +1,18 @@
-import com.sun.deploy.util.StringUtils;
+
 import domain.CardHolder;
 import domain.Operations;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 @Getter
+@Slf4j
 public class TransactionProcessor {
 
     private Map<String, CardHolder> people;
@@ -20,8 +21,7 @@ public class TransactionProcessor {
         this.people = new TreeMap<>();
     }
 
-    public void process(String fileName) throws IOException {
-        List<String> commands = ingest(fileName);
+    public void process(List<String> commands) {
         processCommmands(commands);
         System.out.println(summarize());
     }
@@ -32,18 +32,41 @@ public class TransactionProcessor {
             Operations type = Operations.valueOf(values[0].toUpperCase());
             switch (type) {
                 case ADD:
-                    this.people.put(values[1], new CardHolder(values[1], values[2], 0, Integer.valueOf(values[3])));
+                    addPerson(values);
                     break;
                 case CHARGE:
-                    CardHolder holder = this.people.get(values[1]);
-                    holder.charge(Integer.valueOf(values[2]));
+                    chargePerson(values);
                     break;
                 case CREDIT:
-                    holder = this.people.get(values[1]);
-                    holder.credit(Integer.valueOf(values[2]));
+                    creditPerson(values);
                     break;
+                default:
+                    log.error("Invalid command provided; Command received was {}, may only be of type ADD, CHARGE, or CREDIT", type);
             }
         }
+    }
+
+    protected void creditPerson(String[] values) {
+        CardHolder holder;
+        holder = this.people.get(values[1]);
+        if (holder != null) {
+            holder.credit(Integer.valueOf(values[2]));
+        } else {
+            log.error("Tried to credit account for {} but no card holder exists with that name", values[1]);
+        }
+    }
+
+    protected void chargePerson(String[] values) {
+        CardHolder holder = this.people.get(values[1]);
+        if (holder != null) {
+            holder.charge(Integer.valueOf(values[2]));
+        } else {
+            log.error("Tried to apply a charge to {} but no card holder exists with that name", values[1]);
+        }
+    }
+
+    protected void addPerson(String[] values) {
+        this.people.put(values[1], new CardHolder(values[1], values[2], Integer.valueOf(values[3])));
     }
 
     protected String summarize() {
@@ -55,10 +78,4 @@ public class TransactionProcessor {
                 ), "\n");
     }
 
-    protected List<String> ingest(String fileName) throws IOException {
-        return Files.readAllLines(Paths.get(fileName))
-                .stream()
-                .map(s -> s.replace("$", ""))//get rid of the dollar signs
-                .collect(Collectors.toList());
-    }
 }

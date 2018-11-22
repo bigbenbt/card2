@@ -7,13 +7,19 @@ import org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit;
 
 @Data
 @Slf4j
-@AllArgsConstructor
 public class CardHolder {
 
     private String name;
     private String cardNumber;
     private Integer balance;
     private Integer limit;
+
+    public CardHolder(String name, String cardNumber, Integer limit) {
+        this.name = name;
+        this.cardNumber = cardNumber;
+        this.balance = 0;
+        this.limit = limit;
+    }
 
     public void charge(Integer value) {
         if (this.balance + value <= this.limit) {
@@ -32,7 +38,7 @@ public class CardHolder {
     }
 
     public String summarize(){
-        return name + ": " + (validCard() ? balance : "error");
+        return name + ": " + (validCard() ? "$"+balance : "error");
     }
 
 }
