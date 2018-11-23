@@ -1,5 +1,4 @@
 import domain.CardHolder;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -10,14 +9,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 public class TransactionProcessorTest {
-
-    private String fileName = "C:\\Users\\Ben\\code\\card2\\src\\test\\resources\\input.txt";
-    private TransactionProcessor transactionProcessor;
-
-    @Before
-    public void setUp() throws Exception {
-        this.transactionProcessor = new TransactionProcessor();
-    }
 
     @Test
     public void testAdd() {
