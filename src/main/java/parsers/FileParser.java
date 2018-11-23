@@ -12,7 +12,6 @@ import java.util.stream.Collectors;
 public class FileParser {
 
     public static List<Operation> parse(String fileName) throws IOException {
-
         return Files.readAllLines(Paths.get(fileName))
                 .stream()
                 .map(OperationFactory::buildOperation)

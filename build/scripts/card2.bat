@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\card2-1.0-SNAPSHOT.jar;%APP_HOME%\lib\lombok-1.18.4.jar;%APP_HOME%\lib\commons-validator-1.6.jar;%APP_HOME%\lib\commons-lang3-3.0.jar;%APP_HOME%\lib\slf4j-simple-1.8.0-beta2.jar;%APP_HOME%\lib\mockito-all-2.0.2-beta.jar;%APP_HOME%\lib\commons-beanutils-1.9.2.jar;%APP_HOME%\lib\commons-digester-1.8.1.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\commons-collections-3.2.2.jar;%APP_HOME%\lib\slf4j-api-1.8.0-beta2.jar
+set CLASSPATH=%APP_HOME%\lib\card2-1.0-SNAPSHOT.jar;%APP_HOME%\lib\lombok-1.18.4.jar;%APP_HOME%\lib\commons-validator-1.6.jar;%APP_HOME%\lib\commons-lang3-3.0.jar;%APP_HOME%\lib\slf4j-simple-1.8.0-beta2.jar;%APP_HOME%\lib\commons-beanutils-1.9.2.jar;%APP_HOME%\lib\commons-digester-1.8.1.jar;%APP_HOME%\lib\commons-logging-1.2.jar;%APP_HOME%\lib\commons-collections-3.2.2.jar;%APP_HOME%\lib\slf4j-api-1.8.0-beta2.jar
 
 @rem Execute card2
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CARD2_OPTS%  -classpath "%CLASSPATH%" Application %CMD_LINE_ARGS%

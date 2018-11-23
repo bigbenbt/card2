@@ -28,7 +28,6 @@ public class TransactionProcessor {
                         .stream()
                         .map(CardHolder::summarize)
                         .collect(Collectors.toList()), "\n");
-
     }
 
 }
