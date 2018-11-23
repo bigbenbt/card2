@@ -16,24 +16,20 @@ public class CardHolder {
     public CardHolder(String name, String cardNumber, Integer limit) {
         this.name = name;
         this.cardNumber = cardNumber;
-        this.balance = 0;
         this.limit = limit;
+        this.balance = 0;
     }
 
-    public void charge(Integer value) {
+    public void modify(Integer value) {
         if (this.balance + value <= this.limit) {
             this.balance += value;
         } else {
-            log.error("Charge of {} would take cardholder {} over their limit of {}", value, this.name, this.limit);
+            log.warn("Charge of {} would take cardholder {} over their limit of {}, charge will not be applied", value, this.name, this.limit);
         }
     }
 
-    private boolean validCard(){
+    protected boolean validCard(){
         return  new LuhnCheckDigit().isValid(this.cardNumber);
-    }
-
-    public void credit(Integer value) {
-        this.balance -= value;
     }
 
     public String summarize(){

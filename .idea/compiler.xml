@@ -4,5 +4,11 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="card2.card2.main" target="1.8" />
+      <module name="card2.card2.test" target="1.8" />
+      <module name="card2_main" target="1.8" />
+      <module name="card2_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
