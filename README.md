@@ -7,11 +7,11 @@ This project requires Java 8 to run.  Once that is installed, run the following 
 This will compile the project and run all of the unit tests.  In order to run the program, navigate to the
 build/resources/main directory.  Execute the program in either of the following ways:
 
-./cards.sh <path to input file>
+./cards.sh path/to/input/file
 
 or
 
-./cards.sh < <path to input file>
+./cards.sh < path/to/input/file
 
 The program will run and output the results to the terminal.
 
