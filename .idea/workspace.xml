@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e36578ed-9c41-433e-90e8-cbfaa63a37f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TransactionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TransactionProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parsers/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsers/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parsers/StdInParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parsers/StdInParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,18 +64,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/domain/operation/ModifyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/CardHolder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
@@ -113,8 +99,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,12 +138,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-969" />
           </provider>
         </entry>
       </file>
@@ -181,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/test/java/domain/operation/ModifyTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/cards.sh" />
         <option value="$PROJECT_DIR$/src/main/java/domain/CardHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/domain/CardHolderTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -189,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/parsers/StdInParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/TransactionProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java" />
       </list>
     </option>
@@ -323,7 +328,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Operat&#9;FILE&#9;file://C:/Users/Ben/code/card2/src/main/java/domain/operation/Operation.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543016923238" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543017119385" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -354,7 +359,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionProcessorTest.process">
+  <component name="RunManager" selected="Gradle.card2 [build]">
     <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application" />
       <module name="card2.card2.main" />
@@ -474,24 +479,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ModifyTest - 2018.11.23 at 16h 28m 02s.xml">
-      <configuration name="ModifyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardHolderTest_testCreate - 2018.11.23 at 16h 51m 26s.xml">
-      <configuration name="CardHolderTest.testCreate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardHolderTest_summarize - 2018.11.23 at 17h 08m 22s.xml">
-      <configuration name="CardHolderTest.summarize" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardHolderTest - 2018.11.23 at 17h 13m 24s.xml">
-      <configuration name="CardHolderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CardHolderTest - 2018.11.23 at 17h 15m 28s.xml">
-      <configuration name="CardHolderTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FileParserTest_parse - 2018.11.23 at 17h 35m 00s.xml">
-      <configuration name="FileParserTest.parse" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FileParserTest_parse - 2018.11.23 at 17h 36m 26s.xml">
       <configuration name="FileParserTest.parse" configurationId="JUnit" />
     </history-entry>
@@ -504,12 +491,30 @@
     <history-entry file="FileParserTest - 2018.11.23 at 17h 40m 55s.xml">
       <configuration name="FileParserTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TransactionProcessorTest_summarize - 2018.11.23 at 17h 46m 31s.xml">
+      <configuration name="TransactionProcessorTest.summarize" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionProcessorTest_summarize - 2018.11.23 at 17h 46m 58s.xml">
+      <configuration name="TransactionProcessorTest.summarize" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionProcessorTest_process - 2018.11.23 at 17h 47m 47s.xml">
+      <configuration name="TransactionProcessorTest.process" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionProcessorTest_process - 2018.11.23 at 17h 48m 39s.xml">
+      <configuration name="TransactionProcessorTest.process" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionProcessorTest_process - 2018.11.23 at 17h 48m 45s.xml">
+      <configuration name="TransactionProcessorTest.process" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionProcessorTest_process - 2018.11.23 at 17h 48m 57s.xml">
+      <configuration name="TransactionProcessorTest.process" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -518,7 +523,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34777898" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.34777898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37378114" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -548,17 +553,16 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>testProcessor.summarize()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>FileParser.parse(&quot;src/test/resources/input.txt&quot;)</expression-string>
         <language-id>JAVA</language-id>
@@ -729,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/parsers/StdInParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -759,10 +753,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/reports/tests/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/parsers/FileParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -776,17 +782,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/input.txt">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TransactionProcessorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        <state relative-caret-position="153">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

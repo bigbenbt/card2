@@ -8,7 +8,6 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello!");
         TransactionProcessor processor = new TransactionProcessor();
         List<Operation> operations;
         if (args.length==1) {

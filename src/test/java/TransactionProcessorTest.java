@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 public class TransactionProcessorTest {
 
@@ -18,7 +18,7 @@ public class TransactionProcessorTest {
     List<Operation> testOperations;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         this.testProcessor = new TransactionProcessor();
         testOperations = new ArrayList<>();
         testOperations.add(new Create("Ben", "5454545454545454", 10000));
